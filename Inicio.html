@@ -1,5 +1,6 @@
+
 <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<!-- https://github.com/KDGONZALEZB/PROYECTO_CESDE.git */ -->
+<!-- https://github.com/KDGONZALEZB/CESDE_IAP.git */ -->
 <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <!DOCTYPE html>
 <html lang="es">
@@ -7,12 +8,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ingreso de Clientes</title>
-  <link rel="stylesheet" href="./css/styles.css"> <!-- Enlace al archivo de estilos CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"> <!-- Enlace al archivo de estilos CSS -->
   <style>
     * {
       box-sizing: border-box;
     }
     body {
+
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
@@ -37,7 +39,19 @@
 </head>
 
 <body>
-  <div class="header">TAVOLA</div>
+  
+  <header class="bg-dark text-white py-3 px-4 d-flex justify-content-between align-items-center">
+    <!-- Botón de regreso -->
+    <button class="btn btn-outline-light" onclick="window.history.back()">← Regresar</button>
+  
+    <!-- Título centrado -->
+    <h1 class="m-0 text-center flex-grow-1">TAVOLA</h1>
+  
+    <!-- Botón del carrito -->
+    <button class="btn btn-outline-light">Carrito 🛒</button>
+  </header>
+  
+  
 
   <div class="carousel">
     <div class="carousel-centered"> <!--"carousel-track"> -->
@@ -48,55 +62,85 @@
     </div>
   </div>
 
-  <div class="container">
-    <div class="info">
-      <h2>Bienvenido</h2>
-      <p>Gracias por visitar nuestro sitio. 
-        Somos un negocio dedicado a ofrecer productos de calidad a nuestros clientes. 
-        Inicia sesión para acceder a tu cuenta y disfrutar de nuestros servicios.</p>
+   <main class="container">
+    <div class="row justify-content-center align-items-start">
+      <div class="col-md-6 mb-4">
+        <div class="card shadow">
+          <div class="card-body">
+            <h2 class="card-title">Bienvenido</h2>
+            <p class="card-text">
+              Gracias por visitar nuestro sitio. En
+              <strong>TAVOLA</strong> trabajamos para ofrecerte comida
+              deliciosa, saludable y accesible. Inicia sesión para continuar
+              con tu pedido.
+            </p>
+            <img src="./Imagenes/logo_tavola.png" alt="Imagen 1">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card shadow">
+          <div class="card-body">
+            <h2 class="card-title mb-4">Ingreso</h2>
+            <form action="Pago.html" method="GET" novalidate>
+              <div class="mb-3">
+                <label for="usuario" class="form-label"
+                  >Nombre del Usuario</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="usuario"
+                  name="usuario"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="ubicacion" class="form-label"
+                  >Ubicación (Piso/Área)</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="ubicacion"
+                  name="ubicacion"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="celular" class="form-label">Celular</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="celular"
+                  name="celular"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Contraseña</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                  required
+                />
+              </div>
+              <div class="mb-3 text-end">
+                <a href="#">¿Olvidaste tu contraseña?</a>
+              </div>
+              <button type="submit" class="btn btn-dark w-100">
+                Ingresar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="form">
-      <h2>Ingreso</h2>
-      <form id="form" class="needs-validation" novalidate action="Menu.html" method="GET">
-      <!-- <form action="#" method="post"> -->
-        <input type="text" placeholder="Nombre del Usuario" required>
-        <input type="text" placeholder="Ubicación (Piso/Área)" required>
-        <input type="tel" placeholder="Celular" required>
-        <input type="password" placeholder="Contraseña" required>
-        <div class="forgot"><a href="#">¿Olvidaste tu contraseña?</a></div>
-        <button type="submit">Ingresar</button>
-      </form>
-    </div>
-  </div>
+  </main>
 </body>
 </html>
 
 
-<!-- <body>
-  <main class="container">
-    <h1>Regístrate</h1>
-    <form id="form" class="needs-validation" novalidate action="registrado.html" method="GET">
-      <label for="nombre">Nombre completo:</label>
-      <input type="text" id="nombre" name="nombre" placeholder="Nombre del Usuario" required>
-      <div class="error-message">Campo requerido</div>
 
-      <label for="email">Correo electrónico:</label>
-      <input type="email" id="email" name="email" placeholder="Correo del Usuario" required>
-      <div class="error-message">El formato de Correo no es válido</div>
-
-      <label for="password">Contraseña:</label>
-      <input type="password" id="password" name="password" placeholder="Ingrese Contraseña" required>
-      <div class="error-message">Campo requerido</div>
-
-      <label for="password-confirm">Confirmar Contraseña:</label>
-      <input type="password" id="password-confirm" name="password-confirm" placeholder="Repita la Contraseña" required>
-      <div class="error-message">Campo requerido</div>
-
-      <button type="submit">Registrarme</button>
-    </form>
-  </main>
-
-  <script src="/js/form-validate.js">
-  </script>
-</body>
-</html> -->
