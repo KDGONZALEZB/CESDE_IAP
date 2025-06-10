@@ -1,96 +1,39 @@
-
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Confirmar Pago</title>
-  <link rel="stylesheet" href="./css/style.css" />
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pago - TAVOLA</title>
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
   <style>
-     body {
-      background: #556c72;
-      font-family: 'Segoe UI', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-
-    .container {
-      background: #ffffff;
-      border-radius: 12px;
-      padding: 30px;
-      box-shadow: 0 6px 20px rgba(255, 253, 253, 0.1);
-      max-width: 500px;
-      width: 100%;
-    }
-
-    h2 {
-      text-align: center;
-      color: #333;
-      margin-bottom: 25px;
-    }
-
-    label {
-      display: block;
-      margin-top: 15px;
-      font-weight: bold;
-      color: #555;
-    }
-
     input, select, button {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      font-size: 16px;
-    }
-
-    button {
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      margin-top: 25px;
-      transition: background-color 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #45a049;
-      cursor: pointer;
-    }
-
-    .product {
-      font-weight: bold;
-      color: #222;
-      text-align: center;
-      margin-bottom: 20px;
-    }
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #c1e5dc;
+    font-size: 16px;
+  }
+  button:hover {
+    background-color: #45a049;
+    cursor: pointer;
+  }
   </style>
 </head>
-<body>
-  <div class="container">
-    <h2>Confirmar Pago</h2>
-    <div class="product">Producto seleccionado: <span>Ejemplo Producto</span></div>
+
+<body class="body_pago">
+  <div class="container_pago">
+    <h2 class="h2_pago">Confirmar Pago</h2>
+    <p class="p_pago">Por favor, completa la siguiente información para procesar el pago.</p>
 
     <form>
-      <label for="nombre">Nombre completo:</label>
+      <label class="label_pago" for="nombre">Nombre completo:</label>
       <input type="text" id="nombre" name="nombre" required>
 
-      <label for="direccion">Dirección:</label>
+      <label class="label_pago" for="direccion">Dirección:</label>
       <input type="text" id="direccion" name="direccion" required>
 
-      <label for="metodo">Método de pago:</label>
+      <label class="label_pago" for="metodo">Método de pago:</label>
       <select id="metodo" name="metodo" required>
         <option value="">Selecciona uno</option>
         <option value="tarjeta">Tarjeta de crédito</option>
@@ -98,8 +41,11 @@
         <option value="nequi">Nequi</option>
         <option value="daviplata">Daviplata</option>
       </select>
-
-      <button type="submit">Pagar ahora</button>
+      <p> </p>
+      <button class="button_pago" type="submit">Pagar ahora</button>
+      <p> </p>
+      <p> </p>
+      <a href="Menu.html" class="button_pago_regresar">Seguir comprando</a>
     </form>
   </div>
 </body>

@@ -7,73 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Menú TAVOLA</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-    }
-    header {
-    background-color: #222;
-    color: white;
-    padding: 15px 20px;
-    position: relative;
-    text-align: center;
-    font-size: 1.5rem;
-  }
-    .section-title {
-        margin: 50px 0 30px;
-        border-bottom: 3px solid #ccc;
-        padding-bottom: 10px;
-        text-align: center;
-        color: #333;
-      }
+  <link rel="stylesheet" href="./css/styles.css" />
 
-
-      .card img {
-        height: 150px;
-        object-fit: cover;
-      }
-
-      .btn-custom {
-        background-color: #343a40;
-        color: white;
-      }
-      .btn-custom:hover {
-        background-color: #555;
-      }
-      footer {
-        text-align: center;
-        padding: 20px;
-        margin-top: 50px;
-        background-color: #f1f1f1;
-        color: #555;
-      }
-      .btn-siguiente {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #fff;
-    color: #222;
-    border: none;
-    padding: 8px 16px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-
-  .btn-siguiente:hover {
-    background-color: #ddd;
-  }
-  </style>
 </head>
-<body>
+<body class="body_menu">
 
-  <header>
+  <header class="header_menu">
     <div>TAVOLA - Menú</div>
-    <button class="btn-siguiente">Siguiente</button>
+    <a href="Registro.html" class="btn-siguiente">Siguiente</a>
   </header>
 
   <div class="container">
@@ -81,14 +22,12 @@
       <h2 class="section-title">Cereales</h2>
       <div class="row row-cols-1 row-cols-md-4 g-4">
         <div class="col">
-          <div class="card h-100">
+          <div class="card h-100 ">
             <img
               src="./Imagenes/Granola.png"
               class="card-img-top"
-              alt="Granola"
-            />
-            
-            <div class="card-body text-center">
+              alt="Granola"/>
+            <div class="card-body text-center bg-success-subtle">
               <h5 class="card-title">Granola Mixta</h5>
               <p class="card-text text-muted">$6.000</p>
               <form class="quantity-form">
@@ -102,14 +41,14 @@
                 class="form-control quantity-input"
                 style="width: 80px; display: inline-block; margin-left: 10px;"
               />
-            </form>
-            <p>    </p>
-              <a href="inicio.html" target="_blank" class="btn btn-custom"
-                >Agregar al carrito</a
-              >
+              </form>
+              <p>    </p>
+              <a href="Registro.html" target="_blank" class="btn btn-custom"
+                >Agregar al carrito</a>
             </div>
           </div>
         </div>
+
         <div class="col">
           <div class="card h-100">
             <img
@@ -117,7 +56,7 @@
               class="card-img-top"
               alt="Hojuelas"
             />
-            <div class="card-body text-center">
+            <div class="card-body text-center bg-success-subtle">
               <h5 class="card-title">Hojuelas</h5>
               <p class="card-text text-muted">$5.500</p>
               <form class="quantity-form">
@@ -133,7 +72,7 @@
               />
             </form>
             <p>    </p>
-              <a href="inicio.html" target="_blank" class="btn btn-custom"
+              <a href="Registro.html" target="_blank" class="btn btn-custom"
                 >Agregar al carrito</a
               >
             </div>
@@ -146,7 +85,7 @@
               class="card-img-top"
               alt="Avena"
             />
-            <div class="card-body text-center">
+            <div class="card-body text-center bg-success-subtle">
               <h5 class="card-title">Avena en hojuelas</h5>
               <p class="card-text text-muted">$4.000</p>
               <form class="quantity-form">
@@ -162,7 +101,7 @@
               />
             </form>
             <p>    </p>
-              <a href="inicio.html" target="_blank" class="btn btn-custom"
+              <a href="Registro.html" target="_blank" class="btn btn-custom"
                 >Agregar al carrito</a
               >
             </div>
@@ -175,7 +114,7 @@
               class="card-img-top"
               alt="Cereal Chocolate"
             />
-            <div class="card-body text-center">
+            <div class="card-body text-center bg-success-subtle">
               <h5 class="card-title">Cereal de Chocolate</h5>
               <p class="card-text text-muted">$5.200</p>
               <form class="quantity-form">
@@ -191,7 +130,7 @@
               />
             </form>
             <p>    </p>
-              <a href="inicio.html" target="_blank" class="btn btn-custom"
+              <a href="Registro.html" target="_blank" class="btn btn-custom"
                 >Agregar al carrito</a
               >
             </div>
@@ -210,7 +149,7 @@
               class="card-img-top"
               alt="Empanada"
             />
-            <div class="card-body text-center">
+            <div class="card-body text-center bg-success-subtle">
               <h5 class="card-title">Empanada de carne</h5>
               <p class="card-text text-muted">$3.000</p>
               <form class="quantity-form">
@@ -226,7 +165,7 @@
               />
             </form>
             <p>    </p>
-              <a href="inicio.html" target="_blank" class="btn btn-custom"
+              <a href="Registro.html" target="_blank" class="btn btn-custom"
                 >Agregar al carrito</a
               >
             </div>
@@ -239,7 +178,7 @@
               class="card-img-top"
               alt="Nuggets"
             />
-            <div class="card-body text-center">
+            <div class="card-body text-center bg-success-subtle">
               <h5 class="card-title">Nuggets</h5>
               <p class="card-text text-muted">$2.500</p>
               <form class="quantity-form">
@@ -255,7 +194,7 @@
               />
             </form>
             <p>    </p>
-              <a href="inicio.html" target="_blank" class="btn btn-custom"
+              <a href="Registro.html" target="_blank" class="btn btn-custom"
                 >Agregar al carrito</a
               >
             </div>
@@ -268,7 +207,7 @@
               class="card-img-top"
               alt="Palito de Queso"
             />
-            <div class="card-body text-center">
+            <div class="card-body text-center bg-success-subtle">
               <h5 class="card-title">Palito de Queso</h5>
               <p class="card-text text-muted">$2.500</p>
               <form class="quantity-form">
@@ -284,7 +223,7 @@
               />
             </form>
             <p>    </p>
-              <a href="inicio.html" target="_blank" class="btn btn-custom"
+              <a href="Registro.html" target="_blank" class="btn btn-custom"
                 >Agregar al carrito</a
               >
             </div>
@@ -297,7 +236,7 @@
               class="card-img-top"
               alt="Churro"
             />
-            <div class="card-body text-center">
+            <div class="card-body text-center bg-success-subtle">
               <h5 class="card-title">Churro</h5>
               <p class="card-text text-muted">$4.500</p>
               <form class="quantity-form">
@@ -313,7 +252,7 @@
               />
             </form>
             <p>    </p>
-              <a href="inicio.html" target="_blank" class="btn btn-custom"
+              <a href="Registro.html" target="_blank" class="btn btn-custom"
                 >Agregar al carrito</a
               >
             </div>
@@ -326,7 +265,7 @@
               class="card-img-top"
               alt="Empanada con queso"
             />
-            <div class="card-body text-center">
+            <div class="card-body text-center bg-success-subtle">
               <h5 class="card-title">Empanada con queso</h5>
               <p class="card-text text-muted">$3.800</p>
               <form class="quantity-form">
@@ -342,7 +281,7 @@
               />
             </form>
             <p>    </p>
-              <a href="inicio.html" target="_blank" class="btn btn-custom"
+              <a href="Registro.html" target="_blank" class="btn btn-custom"
                 >Agregar al carrito</a
               >
             </div>
@@ -357,7 +296,7 @@
         <div class="col">
           <div class="card h-100">
             <img src="./Imagenes/Cafe.png" class="card-img-top" alt="Café" />
-            <div class="card-body text-center">
+            <div class="card-body text-center bg-success-subtle">
               <h5 class="card-title">Café</h5>
               <p class="card-text text-muted">$4.000</p>
               <form class="quantity-form">
@@ -373,7 +312,7 @@
               />
             </form>
             <p>    </p>
-              <a href="inicio.html" target="_blank" class="btn btn-custom"
+              <a href="Registro.html" target="_blank" class="btn btn-custom"
                 >Agregar al carrito</a
               >
             </div>
@@ -386,7 +325,7 @@
               class="card-img-top"
               alt="Jugo Naranja"
             />
-            <div class="card-body text-center">
+            <div class="card-body text-center bg-success-subtle">
               <h5 class="card-title">Jugo de naranja</h5>
               <p class="card-text text-muted">$4.000</p>
               <form class="quantity-form">
@@ -402,7 +341,7 @@
               />
             </form>
             <p>    </p>
-              <a href="inicio.html" target="_blank" class="btn btn-custom"
+              <a href="Registro.html" target="_blank" class="btn btn-custom"
                 >Agregar al carrito</a
               >
             </div>
@@ -415,7 +354,7 @@
               class="card-img-top"
               alt="Malteada"
             />
-            <div class="card-body text-center">
+            <div class="card-body text-center bg-success-subtle">
               <h5 class="card-title">Malteada de chocolate</h5>
               <p class="card-text text-muted">$6.500</p>
               <form class="quantity-form">
@@ -431,7 +370,7 @@
               />
             </form>
             <p>    </p>
-              <a href="inicio.html" target="_blank" class="btn btn-custom"
+              <a href="Registro.html" target="_blank" class="btn btn-custom"
                 >Agregar al carrito</a
               >
             </div>
@@ -444,7 +383,7 @@
               class="card-img-top"
               alt="Gaseosa"
             />
-            <div class="card-body text-center">
+            <div class="card-body text-center bg-success-subtle">
               <h5 class="card-title">Gaseosa</h5>
               <p class="card-text text-muted">$3.000</p>
               <form class="quantity-form">
@@ -460,7 +399,7 @@
               />
             </form>
             <p>    </p>
-              <a href="inicio.html" target="_blank" class="btn btn-custom"
+              <a href="Registro.html" target="_blank" class="btn btn-custom"
                 >Agregar al carrito</a
               >
             </div>
@@ -473,7 +412,7 @@
               class="card-img-top"
               alt="Jugo natural"
             />
-            <div class="card-body text-center">
+            <div class="card-body text-center bg-success-subtle">
               <h5 class="card-title">Jugos naturales</h5>
               <p class="card-text text-muted">$5.000</p>
               <form class="quantity-form">
@@ -489,7 +428,7 @@
               />
             </form>
             <p>    </p>
-              <a href="inicio.html" target="_blank" class="btn btn-custom"
+              <a href="Registro.html" target="_blank" class="btn btn-custom"
                 >Agregar al carrito</a
               >
             </div>
@@ -508,7 +447,7 @@
               class="card-img-top"
               alt="Ensalada Frutas"
             />
-            <div class="card-body text-center">
+            <div class="card-body text-center bg-success-subtle">
               <h5 class="card-title">Ensalada de frutas</h5>
               <p class="card-text text-muted">$5.000</p>
               <form class="quantity-form">
@@ -524,7 +463,7 @@
               />
             </form>
             <p>    </p>
-              <a href="inicio.html" target="_blank" class="btn btn-custom"
+              <a href="Registro.html" target="_blank" class="btn btn-custom"
                 >Agregar al carrito</a
               >
             </div>
@@ -537,7 +476,7 @@
               class="card-img-top"
               alt="Ensalada Verde"
             />
-            <div class="card-body text-center">
+            <div class="card-body text-center bg-success-subtle">
               <h5 class="card-title">Ensalada verde</h5>
               <p class="card-text text-muted">$4.800</p>
               <form class="quantity-form">
@@ -553,7 +492,7 @@
               />
             </form>
             <p>    </p>
-              <a href="inicio.html" target="_blank" class="btn btn-custom"
+              <a href="Registro.html" target="_blank" class="btn btn-custom"
                 >Agregar al carrito</a
               >
             </div>
@@ -566,7 +505,7 @@
               class="card-img-top"
               alt="Ensalada Mixta"
             />
-            <div class="card-body text-center">
+            <div class="card-body text-center bg-success-subtle">
               <h5 class="card-title">Ensalada mixta</h5>
               <p class="card-text text-muted">$6.000</p>
               <form class="quantity-form">
@@ -582,7 +521,7 @@
               />
             </form>
             <p>    </p>
-              <a href="inicio.html" target="_blank" class="btn btn-custom"
+              <a href="Registro.html" target="_blank" class="btn btn-custom"
                 >Agregar al carrito</a
               >
             </div>
@@ -591,8 +530,9 @@
       </div>
     </section>
   </div>
-
-  <footer>&copy; 2025 TAVOLA. Todos los derechos reservados.</footer>
+  <p>    </p>
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2023 TAVOLA. Todos los derechos reservados.</p>
 
 </body>
 </html>

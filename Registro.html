@@ -14,59 +14,43 @@
       box-sizing: border-box;
     }
     body {
-
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      background-color: #dfdaac;
+    }
+    .logo {
+      max-width: 305px; 
+      width: 100%;
+      height: auto;
     }
     .carousel-centered {
-                    display: flex;
-                    align-items: center;
-                    align-content: center;
-                    justify-content: center; 
-                    padding: 50px;}
-
-    /* body {
-      font-family: Arial, sans-serif;
       display: flex;
-      justify-content: center;
       align-items: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f4f4f4;
-    } */
+      align-content: center;
+      justify-content: center; 
+      padding: 50px;
+    }
   </style>
 </head>
 
 <body>
-  
   <header class="bg-dark text-white py-3 px-4 d-flex justify-content-between align-items-center">
     <!-- Botón de regreso -->
-    <button class="btn btn-outline-light" onclick="window.history.back()">← Regresar</button>
+    <a class="btn btn-outline-light" href="Menu.html" target="_blank">← Regresar</a>
   
-    <!-- Título centrado -->
     <h1 class="m-0 text-center flex-grow-1">TAVOLA</h1>
   
     <!-- Botón del carrito -->
-    <button class="btn btn-outline-light">Carrito 🛒</button>
+    <a class="btn btn-outline-light" href="Pago.html" target="_blank">Carrito 🛒</a>
   </header>
-  
-  
-
-  <div class="carousel">
-    <div class="carousel-centered"> <!--"carousel-track"> -->
-      <img src="./Imagenes/tavola_img_1.png" alt="Imagen 1">
-      <img src="./Imagenes/tavola_img_2.png" alt="Imagen 2">
-      <img src="./Imagenes/tavola_img_3.png" alt="Imagen 3">
-      <img src="./Imagenes/tavola_img_4.png" alt="Imagen 4">
-    </div>
-  </div>
+  <p> </p>
+  <p> </p>
 
    <main class="container">
     <div class="row justify-content-center align-items-start">
       <div class="col-md-6 mb-4">
         <div class="card shadow">
-          <div class="card-body">
+          <div class="card-body bg-success-subtle">
             <h2 class="card-title">Bienvenido</h2>
             <p class="card-text">
               Gracias por visitar nuestro sitio. En
@@ -74,13 +58,19 @@
               deliciosa, saludable y accesible. Inicia sesión para continuar
               con tu pedido.
             </p>
-            <img src="./Imagenes/logo_tavola.png" alt="Imagen 1">
+            <div class="text-center">
+              <img src="./Imagenes/logo_tavola.png" alt="logo TAVOLA" class="logo img-fluid mb-3">
+            </div>
+            <!--<img src="./Imagenes/logo_tavola.png" alt="logo TAVOLA" class="logo img-fluid mb-3">-->
+            <p class="card-text">
+              Si no tienes una cuenta, puedes registrarte fácilmente. ¡Esperamos
+              que disfrutes de tu experiencia con nosotros!
           </div>
         </div>
       </div>
       <div class="col-md-6 mb-4">
         <div class="card shadow">
-          <div class="card-body">
+          <div class="card-body bg-success-subtle">
             <h2 class="card-title mb-4">Ingreso</h2>
             <form action="Pago.html" method="GET" novalidate>
               <div class="mb-3">
@@ -139,6 +129,17 @@
       </div>
     </div>
   </main>
+  
+  <div class="carousel">
+    <div class="carousel-centered"> <!--"carousel-track"> -->
+      <img src="./Imagenes/tavola_img_1.png" alt="Imagen 1">
+      <img src="./Imagenes/tavola_img_2.png" alt="Imagen 2">
+      <img src="./Imagenes/tavola_img_3.png" alt="Imagen 3">
+      <img src="./Imagenes/tavola_img_4.png" alt="Imagen 4">
+    </div>
+  </div>
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2023 TAVOLA. Todos los derechos reservados.</p>
 </body>
 </html>
 
